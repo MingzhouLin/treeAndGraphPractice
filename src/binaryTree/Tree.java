@@ -11,9 +11,16 @@ public class Tree {
 		while(sequence.getFirst()!=null) {
 			Node node=sequence.getFirst();
 			System.out.print(node.value+" ");
-			sequence.add(node.lChild);
-			sequence.add(node.rChild);
+			if (node.lChild!=null) {
+				sequence.add(node.lChild);
+			}
+			if (node.rChild!=null) {
+				sequence.add(node.rChild);
+			}
 			sequence.removeFirst();
+			if (sequence.isEmpty()) {
+				break;
+			}
 		}
 	}
 }
