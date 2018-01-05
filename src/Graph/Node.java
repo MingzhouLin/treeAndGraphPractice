@@ -4,6 +4,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 
 public class Node {
-	public int value;
-	public LinkedList<Node> adjacent=new LinkedList<>();
+	public String value;
+	public LinkedList<Edge> edges=new LinkedList<>();
 }
